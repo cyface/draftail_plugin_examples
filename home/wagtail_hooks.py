@@ -8,17 +8,6 @@ from wagtail.core import hooks
 from wagtail.admin.rich_text.converters.html_to_contentstate import InlineStyleElementHandler
 
 
-@hooks.register('construct_whitelister_element_rules')
-def whitelister_element_rules():
-    """
-    Tells Draftail that having span tags is A-OK!
-    :return:
-    """
-    return {
-        'span': attribute_rule({'class': True}),
-    }
-
-
 @hooks.register('register_rich_text_features')
 def register_smallcaption_feature(features):
     """
@@ -91,7 +80,7 @@ def register_underline_feature(features):
     control = {
         'type': type_,
         'label': 'U',
-        'description': 'underline',
+        'description': 'Underline',
     }
 
     # 3. Call register_editor_plugin to register the configuration for Draftail.
