@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static wagtailcore_tags %}
+
+{% block body_class %}{% endblock %}
+
+{% block extra_css %}
+    <style>
+        .small-caption {
+            font-size: 75%;
+            color: grey;
+        }
+    </style>
+{% endblock extra_css %}
+
+{% block content %}
+    {{ page.body|richtext }}
+{% endblock content %}
