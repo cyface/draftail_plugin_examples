@@ -5,7 +5,7 @@ This repo has examples of extensions for the Draftail editor which is used in th
 
 An explanation of these extensions can be found in [this post](https://medium.com/@timlwhite/custom-in-line-styles-with-draftail-939201c2bbda).
 
-The `home/wagtail_hooks.py` file is where you should look for the extensions.
+The [home/wagtail_hooks.py](https://github.com/cyface/draftail_plugin_examples/blob/master/home/wagtail_hooks.py) file is where you should look for the extensions.
 
 How to use:
 
